@@ -7,6 +7,7 @@ import SideBar from './components/Sidebar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ProductDetails from './pages/ProductDetails';
+import Checkout from './pages/Checkout';
 
 
 const App = () => {
@@ -19,6 +20,9 @@ const App = () => {
           <Route path='/product/:id' element={<ProductDetails />} />
         </Routes>
         <SideBar />
+        <Routes>
+          <Route path='/checkout' element={<Checkout />} />
+        </Routes>
         <Footer />
       </Router>
     </div>
