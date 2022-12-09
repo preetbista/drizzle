@@ -8,49 +8,51 @@ const Checkout = () => {
             <div className='text-lg font-semibold justify-center'>Checkout</div>
             <div className=''>
                 <div className='flex flex-row  gap-[250px]'>
-                    <div className='text-sm  ml-[50px] rounded-full py-2 px-1 bg-blue-500 text-white' >Shipping Address</div>
+                    <div className='text-sm  ml-[50px] rounded-full py-2 px-1 bg-blue-400 text-white' >Shipping Address</div>
                     <div className='text-sm mr-[50px] py-2' >Payment Details</div>
                 </div>
 
-                <form>
-                    <div class="mt-6 grid gap-6 mb-6 md:grid-cols-2">
-                        <div>
-                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">First name</label>
-                            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+                <form class=" w-full  mt-6">
+                    <div className='flex flex-row px-5' >
+                        <div class="  ml-7 flex items-center border-b border-teal-500 py-2">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 
+                        leading-tight focus:outline-none"
+                                type="text" placeholder="First Name" aria-label="Full name" required />
                         </div>
-                        <div>
-                            <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Last name</label>
-                            <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required />
-                        </div>
-                        <div>
-                            <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company</label>
-                            <input type="text" id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required />
-                        </div>
-                        <div>
-                            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
-                            <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
-                        </div>
-                        <div>
-                            <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website URL</label>
-                            <input type="url" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required />
-                        </div>
-                        <div>
-                            <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique visitors (per month)</label>
-                            <input type="number" id="visitors" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+
+                        <div class=" ml-[75px] flex items-center border-b border-teal-500 py-2">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 
+                        leading-tight focus:outline-none"
+                                type="text" placeholder="Last Name" aria-label="Full name" required />
                         </div>
                     </div>
-                    <div class="mb-6">
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
+                    <div className='flex flex-row px-5 gap-12'>
+                        <div class="mt-3 ml-7 flex  items-center border-b border-teal-500 py-2">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 
+                        leading-tight focus:outline-none"
+                                type="email" placeholder="Email" aria-label="Full name" required />
+                        </div>
+                        <div class="mt-3 ml-7 flex  items-center border-b border-teal-500 py-2">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 
+                        leading-tight focus:outline-none"
+                                type="number" placeholder="Contact" aria-label="Full name" required />
+                        </div>
+                    </div>
+                    <div className='flex flex-row py-5 ml-[180px] mr-[180px] border-hidden text-gray-700'>
+                        <div class="mt-3 ml-7 flex  items-center border-b border-teal-500 py-2">
+                            <select className=' border-hidden cursor-pointer' >
+                                <option selected >Select Your Location</option>
+                                <option value="KTM">Kathmandu</option>
+                                <option value="PKR">Pokhara</option>
+                                <option value="BKT">Bhaktapur</option>
+                                <option value="LTP">Lalitpur</option>
+                            </select>
+                        </div>
                     </div>
 
-                    {/* <div class="flex items-start mb-6">
-                        <div class="flex items-center h-5">
-                            <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
-                        </div>
-                        <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
-                    </div> */}
-                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                    <div className='flex  mt-9 items-center ml-[230px]' >
+                        <button type="button" className=' text-sm  ml-[50px] rounded-xl py-2 px-1 bg-gray-500 hover:bg-blue-500 text-white' >Next</button>
+                    </div>
                 </form>
 
             </div>
